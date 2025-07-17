@@ -15,7 +15,8 @@ class Shop:
 
     def shopping(self, customer: Any) -> None:
         print("")
-        print(f"Date: {datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}")
+        actual_date = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        print(f"Date: {actual_date}")
         print(f"Thanks, {customer.name}, for your purchase!")
         print("You have bought:")
         total_cost = 0
